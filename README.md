@@ -1,5 +1,5 @@
 # PyGradeTool
-MarcoPastas Cross-Platform PyGradeTool für die Bewertung von Studenten. Geschrieben in Python mit dem PyQt5 Framework, executables erstellt mit PyInstaller
+MarcoPastas Cross-Platform PyGradeTool für die Bewertung von Studenten in Prog1. Geschrieben in Python mit dem PyQt5 Framework, executables erstellt mit PyInstaller
 ___
 # Nutzung
 Das Tool erstellt eine .html-Datei mit dem angegeben Namen + ".html". Dabei wird bei dem eingegebenen Namen das Leerzeichen gefiltert und durch ein '_' ersetzt. 
