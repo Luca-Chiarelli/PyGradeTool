@@ -20,7 +20,7 @@ Wer sich an der Entwicklung beteiligen möchte kann dies wie folgt tun:
 
 Eine Executable kann wie folgt erstellt werden: 
 ```bash
-pyinstaller --onfile --windowed pygradetool.py
+pyinstaller --onefile --windowed pygradetool.py
 ```
 ___
 # Betriebssysteme
