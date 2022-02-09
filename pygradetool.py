@@ -434,4 +434,5 @@ if __name__ == "__main__":
     ui = Ui_PyGradeTool()
     ui.setupUi(PyGradeTool)
     PyGradeTool.show()
+    PyGradeTool.setFixedSize(PyGradeTool.size())
     sys.exit(app.exec())
