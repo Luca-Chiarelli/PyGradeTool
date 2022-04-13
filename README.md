@@ -8,8 +8,8 @@ Bei der Erstellung der HTML Datei wird eine Tabelle erzeugt, welche den Namen de
 
 Um das Programm zu starten muss die im Repo enthaltene pygradetool.py mit Python gestartet werden. Wer möchte kann sich über das Pkg Pyinstaller eine executable erstellen und diese ins WD schieben (alternativ die .exe Datei in das WD schieben.)
 ___
-# Entwicklung 
-Wer sich an der Entwicklung beteiligen möchte kann dies wie folgt tun:
+# Installation 
+mit folgenden schritten installiert ihr das Tool: 
 * `python3-venv` über den PackageManager deiner Distro installieren.
 * Auf Windows ist venv bei der Installation schon dabei.
 * VirtualEnvironment erstellen mit `python3 -m venv venv` Erstellt einen  Ordner mit dem Namen `venv`.
@@ -22,6 +22,8 @@ Eine Executable kann wie folgt erstellt werden:
 ```bash
 pyinstaller --onefile --windowed pygradetool.py
 ```
+
+Wer sich an der Entwicklung beteiligen möchte kann sich gerne bei mir melden :) 
 ___
 # Betriebssysteme
 PyGradeTool ist in Python mit der PyQt5 Library geschrieben und sollte deshalb auf jedem Betriebssystem laufen. 
@@ -29,11 +31,7 @@ PyGradeTool ist in Python mit der PyQt5 Library geschrieben und sollte deshalb a
 ## Getestete Betriebssysteme
 * Windows 10 ✔️
 * MacOS ✔️
-* Linux: 
-    * Ubuntu ✔️
-    * Debian ✔️
-    * Arch Linux ✔️
-    * Fedora ✔️
+* Linux:✔️
 ___
 # Danksagung
 Eine Danksagung geht raus an:
