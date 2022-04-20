@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 
@@ -293,9 +295,11 @@ class Ui_PyGradeTool(object):
         
         # Replace spaces in current strint with underscore for better html format on linux
         program_name = self.zu_bewerten_in.text().replace(" ", "_")
-        
+
+        os.makedirs("./html")
+
         # print(program_name)
-        f = open(program_name + ".html", "w", encoding='utf8')
+        f = open("./html/" + program_name + ".html", "w", encoding='utf8')
 
         html_file_begin = f"""<div>
                     <table class="content-table" style="border-collapse: collapse;margin: 25px 0;font-size: 0.9em;border-radius: 5px 5px 0 0;overflow: hidden;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
