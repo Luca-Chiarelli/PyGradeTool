@@ -9,7 +9,7 @@ class Ui_PyGradeTool(object):
     def setupUi(self, PyGradeTool):
         PyGradeTool.setObjectName("PyGradeTool")
         PyGradeTool.setEnabled(True)
-        PyGradeTool.resize(800, 680)
+        PyGradeTool.resize(800, 710)
         PyGradeTool.setTabletTracking(False)
         PyGradeTool.setFocusPolicy(QtCore.Qt.NoFocus)
         # Hat auf Linux funktioniert, sorgt in Windows aber dafür das man das Fenster nicht sehen kann
@@ -49,6 +49,9 @@ class Ui_PyGradeTool(object):
         self.kriterium_7 = QtWidgets.QLineEdit(PyGradeTool)
         self.kriterium_7.setGeometry(QtCore.QRect(10, 330, 541, 25))
         self.kriterium_7.setObjectName("kriterium_7")
+        self.kriterium_8 = QtWidgets.QLineEdit(PyGradeTool)
+        self.kriterium_8.setGeometry(QtCore.QRect(10, 360, 541, 25))
+        self.kriterium_8.setObjectName("kriterium_8")
         self.kriterium_von = QtWidgets.QLineEdit(PyGradeTool)
         self.kriterium_von.setGeometry(QtCore.QRect(720, 150, 61, 25))
         self.kriterium_von.setObjectName("kriterium_von")
@@ -73,6 +76,9 @@ class Ui_PyGradeTool(object):
         self.kriterium_in_7 = QtWidgets.QLineEdit(PyGradeTool)
         self.kriterium_in_7.setGeometry(QtCore.QRect(630, 330, 61, 25))
         self.kriterium_in_7.setObjectName("kriterium_in_7")
+        self.kriterium_in_8 = QtWidgets.QLineEdit(PyGradeTool)
+        self.kriterium_in_8.setGeometry(QtCore.QRect(630, 360, 61, 25))
+        self.kriterium_in_8.setObjectName("kriterium_in_8")
         self.kriterium_von_3 = QtWidgets.QLineEdit(PyGradeTool)
         self.kriterium_von_3.setGeometry(QtCore.QRect(720, 210, 61, 25))
         self.kriterium_von_3.setObjectName("kriterium_von_3")
@@ -88,6 +94,9 @@ class Ui_PyGradeTool(object):
         self.kriterium_von_7 = QtWidgets.QLineEdit(PyGradeTool)
         self.kriterium_von_7.setGeometry(QtCore.QRect(720, 330, 61, 25))
         self.kriterium_von_7.setObjectName("kriterium_von_7")
+        self.kriterium_von_8 = QtWidgets.QLineEdit(PyGradeTool)
+        self.kriterium_von_8.setGeometry(QtCore.QRect(720, 360, 61, 25))
+        self.kriterium_von_8.setObjectName("kriterium_von_8")
         self.slash_1 = QtWidgets.QLabel(PyGradeTool)
         self.slash_1.setGeometry(QtCore.QRect(700, 150, 16, 17))
         self.slash_1.setObjectName("slash_1")
@@ -112,43 +121,46 @@ class Ui_PyGradeTool(object):
         self.slash_7 = QtWidgets.QLabel(PyGradeTool)
         self.slash_7.setGeometry(QtCore.QRect(700, 330, 16, 17))
         self.slash_7.setObjectName("slash_7")
-        self.kommentar = QtWidgets.QLabel(PyGradeTool)
-        self.kommentar.setGeometry(QtCore.QRect(10, 370, 91, 17))
-        self.kommentar.setObjectName("kommentar")
-        self.hinweise = QtWidgets.QLabel(PyGradeTool)
-        self.hinweise.setGeometry(QtCore.QRect(10, 490, 91, 17))
-        self.hinweise.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.hinweise.setObjectName("hinweise")
-        self.musterloesung = QtWidgets.QLabel(PyGradeTool)
-        self.musterloesung.setGeometry(QtCore.QRect(10, 610, 101, 17))
-        self.musterloesung.setObjectName("musterloesung")
-        self.summe_in = QtWidgets.QLineEdit(PyGradeTool)
-        self.summe_in.setGeometry(QtCore.QRect(630, 360, 61, 25))
-        self.summe_in.setObjectName("summe_in")
-        self.summe_von = QtWidgets.QLineEdit(PyGradeTool)
-        self.summe_von.setGeometry(QtCore.QRect(720, 360, 61, 25))
-        self.summe_von.setObjectName("summe_von")
         self.slash_8 = QtWidgets.QLabel(PyGradeTool)
         self.slash_8.setGeometry(QtCore.QRect(700, 360, 16, 17))
         self.slash_8.setObjectName("slash_8")
+        self.kommentar = QtWidgets.QLabel(PyGradeTool)
+        self.kommentar.setGeometry(QtCore.QRect(10, 400, 91, 17))
+        self.kommentar.setObjectName("kommentar")
+        self.hinweise = QtWidgets.QLabel(PyGradeTool)
+        self.hinweise.setGeometry(QtCore.QRect(10, 520, 91, 17))
+        self.hinweise.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.hinweise.setObjectName("hinweise")
+        self.musterloesung = QtWidgets.QLabel(PyGradeTool)
+        self.musterloesung.setGeometry(QtCore.QRect(10, 640, 101, 17))
+        self.musterloesung.setObjectName("musterloesung")
+        self.summe_in = QtWidgets.QLineEdit(PyGradeTool)
+        self.summe_in.setGeometry(QtCore.QRect(630, 390, 61, 25))
+        self.summe_in.setObjectName("summe_in")
+        self.summe_von = QtWidgets.QLineEdit(PyGradeTool)
+        self.summe_von.setGeometry(QtCore.QRect(720, 390, 61, 25))
+        self.summe_von.setObjectName("summe_von")
+        self.slash_9 = QtWidgets.QLabel(PyGradeTool)
+        self.slash_9.setGeometry(QtCore.QRect(700, 390, 16, 17))
+        self.slash_9.setObjectName("slash_9")
         self.kommentar_in = QtWidgets.QTextEdit(PyGradeTool)
-        self.kommentar_in.setGeometry(QtCore.QRect(10, 390, 541, 91))
+        self.kommentar_in.setGeometry(QtCore.QRect(10, 420, 541, 91))
         self.kommentar_in.setTabletTracking(True)
         self.kommentar_in.setObjectName("kommentar_in")
         self.hinweise_in = QtWidgets.QTextEdit(PyGradeTool)
-        self.hinweise_in.setGeometry(QtCore.QRect(10, 510, 541, 91))
+        self.hinweise_in.setGeometry(QtCore.QRect(10, 540, 541, 91))
         self.hinweise_in.setObjectName("hinweise_in")
         self.musterloesung_in = QtWidgets.QLineEdit(PyGradeTool)
-        self.musterloesung_in.setGeometry(QtCore.QRect(10, 630, 541, 25))
+        self.musterloesung_in.setGeometry(QtCore.QRect(10, 660, 541, 25))
         self.musterloesung_in.setObjectName("musterloesung_in")
         self.bewertung_generieren = QtWidgets.QPushButton(PyGradeTool)
-        self.bewertung_generieren.setGeometry(QtCore.QRect(630, 420, 160, 25))
+        self.bewertung_generieren.setGeometry(QtCore.QRect(630, 450, 160, 25))
         self.bewertung_generieren.setObjectName("bewertung_generieren")
         self.compiler_fehler_checkbox = QtWidgets.QCheckBox(PyGradeTool)
-        self.compiler_fehler_checkbox.setGeometry(QtCore.QRect(630, 385, 25, 25))
+        self.compiler_fehler_checkbox.setGeometry(QtCore.QRect(630, 415, 25, 25))
         self.compiler_fehler_checkbox.setObjectName("compiler_fehler_checkbox")
         self.compiler_fehler_label = QtWidgets.QLabel(PyGradeTool)
-        self.compiler_fehler_label.setGeometry(QtCore.QRect(650, 385, 150, 25))
+        self.compiler_fehler_label.setGeometry(QtCore.QRect(650, 415, 150, 25))
         self.compiler_fehler_label.setObjectName("compiler_fehler_label")
         self.zu_bewerten_in.raise_()
         self.zu_bewerten.raise_()
@@ -174,6 +186,7 @@ class Ui_PyGradeTool(object):
         self.kriterium_von_5.raise_()
         self.kriterium_von_6.raise_()
         self.kriterium_von_7.raise_()
+        self.kriterium_von_8.raise_()
         self.slash_1.raise_()
         self.kriterium_von_2.raise_()
         self.slash_2.raise_()
@@ -182,12 +195,13 @@ class Ui_PyGradeTool(object):
         self.slash_5.raise_()
         self.slash_6.raise_()
         self.slash_7.raise_()
+        self.slash_8.raise_()
         self.kommentar.raise_()
         self.hinweise.raise_()
         self.musterloesung.raise_()
         self.summe_in.raise_()
         self.summe_von.raise_()
-        self.slash_8.raise_()
+        self.slash_9.raise_()
         self.hinweise_in.raise_()
         self.kommentar_in.raise_()
         self.musterloesung_in.raise_()
@@ -214,6 +228,7 @@ class Ui_PyGradeTool(object):
         self.slash_5.setText(_translate("PyGradeTool", "/"))
         self.slash_6.setText(_translate("PyGradeTool", "/"))
         self.slash_7.setText(_translate("PyGradeTool", "/"))
+        self.slash_9.setText(_translate("PyGradeTool", "/"))
         self.kommentar.setText(_translate("PyGradeTool", "Kommentare"))
         self.hinweise.setText(_translate("PyGradeTool", "Hinweise"))
         self.musterloesung.setText(_translate("PyGradeTool", "Musterlösung"))
@@ -238,6 +253,8 @@ class Ui_PyGradeTool(object):
             self.number_in += int(self.kriterium_in_6.text())
         if not self.kriterium_in_7.text() == "":
             self.number_in += int(self.kriterium_in_7.text())
+        if not self.kriterium_in_8.text() == "":
+            self.number_in += int(self.kriterium_in_8.text())
         # print(self.number_in)
         if self.compiler_fehler_checkbox.isChecked():
             self.number_in = 0
@@ -256,6 +273,8 @@ class Ui_PyGradeTool(object):
         if not self.kriterium_von_6.text() == "":
             self.number_von += int(self.kriterium_von_6.text())
         if not self.kriterium_von_7.text() == "":
+            self.number_von += int(self.kriterium_von_7.text())
+        if not self.kriterium_von_8.text() == "":
             self.number_von += int(self.kriterium_von_7.text())
         # print(self.number_von)
         self.summe_von.setText(str(self.number_von))
@@ -366,6 +385,11 @@ class Ui_PyGradeTool(object):
             <td style="padding: 12px 15px;">{self.kriterium_in_7.text()}/{self.kriterium_von_7.text()}</td>
         </tr>"""
 
+        html_krit8 = f"""<tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px;">{self.kriterium_8.text()}</td>
+            <td style="padding: 12px 15px;">{self.kriterium_in_8.text()}/{self.kriterium_von_8.text()}</td>
+        </tr>"""
+
         if not self.compiler_fehler_checkbox.isChecked():
             html_file_end = f"""<tr class="active-row" style="border-bottom: 1px solid #dddddd;font-weight: bold;color: #009879;">
                                 <td style="padding: 12px 15px;">Summe</td>
@@ -426,6 +450,9 @@ class Ui_PyGradeTool(object):
 
         if not (self.kriterium_7.text() and self.kriterium_in_7.text() and self.kriterium_von_7.text()) == "":
             html_file += html_krit7
+
+        if not (self.kriterium_8.text() and self.kriterium_in_8.text() and self.kriterium_von_8.text()) == "":
+            html_file += html_krit8
 
         html_file += html_file_end
 
