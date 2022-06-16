@@ -275,7 +275,7 @@ class Ui_PyGradeTool(object):
         if not self.kriterium_von_7.text() == "":
             self.number_von += int(self.kriterium_von_7.text())
         if not self.kriterium_von_8.text() == "":
-            self.number_von += int(self.kriterium_von_7.text())
+            self.number_von += int(self.kriterium_von_8.text())
         # print(self.number_von)
         self.summe_von.setText(str(self.number_von))
 

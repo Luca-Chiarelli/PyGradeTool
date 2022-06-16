@@ -22,6 +22,10 @@ Eine Executable kann wie folgt erstellt werden:
 ```bash
 pyinstaller --onefile --windowed pygradetool.py
 ```
+Bei dem Fehler `missing \_bootlocale`: 
+```bash
+--exlude-module \_bootlocale
+```
 
 Wer sich an der Entwicklung beteiligen möchte kann sich gerne bei mir melden :) 
 ___
